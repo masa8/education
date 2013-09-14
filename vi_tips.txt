@@ -1,0 +1,16 @@
+
+Syntax Highlighting
+====================
+ 
+ #1 Create .vimrc
+ #2 Add this line 
+ 	syntax on
+
+
+
+Show Line number
+================
+
+ #1 Create .vimrc
+ #2 Add this line
+ 	set number
