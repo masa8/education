@@ -14,3 +14,21 @@ Show Line number
  #1 Create .vimrc
  #2 Add this line
  	set number
+
+
+Go to difinition
+================
+
+ #1 install ctags
+ #2 cd to the root directory of your project
+ #3 Run ctags recursively 
+    $ctags -R *
+ #4 run vim -t <tag>
+ #5 :edit <filename>
+ #6 Move to type name 
+ #7 Ctrl-]
+
+Jump back up in the tag stack
+=============================
+ #8 Ctrl-t
+
