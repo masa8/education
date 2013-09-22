@@ -15,6 +15,11 @@ Show Line number
  #2 Add this line
  	set number
 
+Change tab to 4 spaces
+=======================
+ #1 :set expandtab
+ #2 ;set tabstop=4
+ #3 :retab
 
 Go to difinition
 ================
@@ -31,4 +36,28 @@ Go to difinition
 Jump back up in the tag stack
 =============================
  #8 Ctrl-t
+
+
+Delete Multiple Lines
+=====================
+ #1 type [ms] at start line to delete
+ #2 type [me] at end line to delete
+ #3 type [:'s,'ed]
+ 
+
+  NOTE
+    + ms: mark start
+    + me: mark end
+    +:'s,'ed  delete from start to end.
+       's means start
+       'e means end
+
+Copy Multiple Lines
+=====================
+ #1 type [ms]
+ #2 type [me]
+ #3 type [:'s,'ey]
+ #4 type p at the line you want to copy them.
+
+
 
