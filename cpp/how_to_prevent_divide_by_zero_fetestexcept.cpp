@@ -2,6 +2,8 @@
 #include <math.h>
 #include <fenv.h>
 /*!
+    http://linux.die.net/man/3/fetestexcept
+
    Exceptions
    ==========
     The divide-by-zero exception occurs when an operation on finite 
