@@ -12,6 +12,7 @@ class Data {
     public:
     void set(float f){ 
         _data.input = f;
+        bits.reset();
         bits = std::bitset<32>(_data.output);
     }
     void setNaN(){
@@ -85,6 +86,7 @@ int main() {
     omake.disp();
     omake.setInf();
     omake.disp();
-
+    omake.set(0.1f);
+    omake.disp();
 }
 
