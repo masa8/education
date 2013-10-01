@@ -4,6 +4,21 @@
                 Non-POD with implicitly default constructor
                 Non-POD with explicitly default constructor
 
+    NOTE*
+    What's POD?
+        POD ==> scalor type
+                or
+                pod class
+                            no user-defined copy-assignment ope
+                            no user-defined destructor
+                            no non static memeber which is non POD
+                            must be aggregate
+
+        Aggregate           
+                            1. no base class
+                            2. no user-defined constructor
+                            3. no virtual funciton
+                            4. no private/protected non static mmember
  */
 struct POD {
     int m;
