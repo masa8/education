@@ -7,7 +7,11 @@
         Default-Constructible   Option(when you use resize(), MUST)
         Copy-Constructive       MUST
         Copy-assignable         MUST
-        
+
+    NOTE*
+    you explicitly declare absolutely any constructor
+    for a class, the compiler STOPs providing the implicit
+    default constructor.        
  
 */ 
 class MyC {
@@ -19,7 +23,12 @@ class MyC {
     private:
     MyC():x(0),y(0){}
 };
-
+class MyCC {
+public:
+    MyCC(){}
+    MyCC(const MyCC&) {}
+    MyCC& operator =(const MyCC&) {}
+};
 class functor {
 public:
     void operator()(MyC& i){
@@ -37,6 +46,10 @@ int main(){
     v.push_back(b);
     functor f;
     std::for_each(v.begin(),v.end(),functor());
+
+    std::vector<MyCC> vc;
+    MyCC c;
+    vc.push_back(c);
 
 
 
