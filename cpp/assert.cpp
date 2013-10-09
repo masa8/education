@@ -1,10 +1,12 @@
 /*!
     http://www.cplusplus.com/reference/cassert/assert/
-   
+  
+  Standard C++ Library.
+  -------------------------------------------------
   assert is intended to be used 
   FOR   : Programmer                NOT USER 
   PHASE: debugging and testing.     NOT RELEASE
-  
+  -------------------------------------------------
  If the argument expression of this macro with funcitonal form
  compares equal to zero, a message is written to the standard error
  device and abort is called, trminating the program exection.
